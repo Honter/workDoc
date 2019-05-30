@@ -77,6 +77,6 @@ ps -ef|grep svn|grep -v grep
 ```
  kill 端口号
 ```
-查看进程命令返回结果如下：  
+查看进程命令返回结果如下： 
 root 12538 1 0 14:40 ? 00:00:00 svnserve -d -r /opt/svn/repositories
 此进程对于的关闭命令为  kill 12538
