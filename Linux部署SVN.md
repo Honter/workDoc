@@ -22,7 +22,7 @@ svnadmin create /home/retina/svn/项目名
  cd /项目  ls -a  如有conf等5类文件代表创建ok
 
  * 3.配置权限
- 在2中目录位置/home/retina/svn/项目输入命令（一般建议放在home文件夹下，在新建一个文件夹存放）
+ 在2中目录位置/home/retina/svn/项目输入命令（一般建议放在home文件夹下，再新建一个文件夹存放）
  ```
  cd conf
  vi authz
@@ -53,7 +53,7 @@ Password-db = passwd
 Realm = My First Prepository
 ```
 
-* 4.根据cenos版本可自行百度关闭防火墙相关配置
+* 4.根据cenos版本可自行百度关闭防火墙相关配置  
 centos6相关命令
 ```
 /sbin/iptables -I INPUT -p tcp --dport 3690 -j ACCEPT
@@ -77,6 +77,6 @@ ps -ef|grep svn|grep -v grep
 ```
  kill 端口号
 ```
-查看进程命令返回结果如下：
+查看进程命令返回结果如下：  
 root 12538 1 0 14:40 ? 00:00:00 svnserve -d -r /opt/svn/repositories
 此进程对于的关闭命令为  kill 12538
