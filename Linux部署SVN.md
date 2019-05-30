@@ -44,7 +44,6 @@ vi passwd
 svn配置
 ```
 vi svnserver.conf
-
 ```
 找到以下代码去掉注释#
 ```
