@@ -46,7 +46,7 @@ svn配置
 vi svnserver.conf
 
 ```
-找到一下代码去掉注释#
+找到以下代码去掉注释#
 ```
 anon-access=none
 auth-access=write
