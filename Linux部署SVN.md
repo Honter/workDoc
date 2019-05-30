@@ -2,7 +2,7 @@
 
 * 1.连接服务器
 ```
-ssh root@10.21.19.164
+ssh root@192.168.1.1 (部署的服务器地址)
 ```
 输入密码
 
@@ -22,7 +22,7 @@ svnadmin create /home/retina/svn/项目名
  cd /项目  ls -a  如有conf等5类文件代表创建ok
 
  * 3.配置权限
- 在2中目录位置/home/retina/svn/项目输入命令
+ 在2中目录位置/home/retina/svn/项目输入命令（一般建议放在home文件夹下，在新建一个文件夹存放）
  ```
  cd conf
  vi authz
@@ -54,7 +54,7 @@ Password-db = passwd
 Realm = My First Prepository
 ```
 
-* 4.跟慕cenos版本可自行百度关闭防火墙相关配置
+* 4.根据cenos版本可自行百度关闭防火墙相关配置
 centos6相关命令
 ```
 /sbin/iptables -I INPUT -p tcp --dport 3690 -j ACCEPT
